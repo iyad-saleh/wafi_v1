@@ -6,8 +6,13 @@ python manage.py loaddata data.json
 
 
 python manage.py shell
+
+
 from international.utilty import *
+
+
 AddCurrency()
+
 // go to admin /curruncy and add and active coin you want
 
 
