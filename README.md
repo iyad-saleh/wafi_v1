@@ -1,27 +1,19 @@
-# wafi
-python manage.py runserver
+python manage.py makemigrations account blog users company customer box coin passport employee bus expense  trip reservation ked international guest
 
 python manage.py migrate
 
-python manage.py makemigrations
-
-
-python manage.py makemigrations account blog users company customer box coin passport employee bus expense  trip reservation ked
-
-
-
-
-
-winpty python manage.py createsuperuser
-
-python manage.py dumpdata myapp > databasedump.json
 python manage.py loaddata data.json
 
 
-django-admin makemessages --all
-django-admin compilemessages
+python manage.py shell
+from international.utilty import *
+AddCurrency()
+// go to admin /curruncy and add and active coin you want
+
+
+
+python manage.py runserver
 
 
 
 
-# wafi_v1
